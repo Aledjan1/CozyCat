@@ -4,6 +4,14 @@ Responsive e-commerce website for premium cat houses and accessories.
 
 ---
 
+![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
+![PHP](https://img.shields.io/badge/PHP-purple?logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-blue?logo=mysql)
+![Responsive](https://img.shields.io/badge/Responsive-Design-green)
+![Dark Mode](https://img.shields.io/badge/Dark_Mode-Supported-black)
+
 ## ✨ Features
 
 - User registration and login
