@@ -1,0 +1,293 @@
+.care_banner {
+    height: 380px;
+    width: 100%;
+    background-image: url("../images/care_banner.png");
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    align-items: center;
+    padding: 0 90px;
+}
+
+.care_banner .banner_content {
+    max-width: 520px;
+}
+
+.banner_title {
+    font-size: 42px;
+    color: #2b1208;
+    margin-bottom: 18px;
+}
+
+.banner_text {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.care_essentials {
+    padding: 40px 90px 20px;
+    background: #fffaf7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.care_essentials h3 {
+    grid-column: 1 / -1;
+    font-size: 24px;
+    color: #2b1208;
+    margin-bottom: 5px;
+}
+
+.care_essential_text {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+.care_icon {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f2b8be;
+    border-radius: 50%;
+    color: #DB5C69;
+    object-fit: cover;
+}
+
+.care_essential_text h4 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #2b1208;
+}
+
+.care_essential_text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.care_tips {
+    padding: 20px 90px 50px;
+    background: #fffaf7;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    gap: 35px;
+    align-items: start;
+    height: auto;
+    width: 100%;
+}
+
+.care_material {
+    background: #fff0f2;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    height: auto;
+}
+
+.care_material h3,
+.care_extra_tips h3 {
+    font-size: 18px;
+    color: #2b1208;
+    margin-bottom: 20px;
+}
+
+.care_material_item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.care_material_item h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #2b1208;
+}
+
+.care_material_item p,
+.extra_tips p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.care_extra_tips {
+    background: #fff0f2;
+    padding: 35px 30px;
+    border-radius: 14px;
+    height: auto;
+}
+
+.extra_tips {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.tip_icon {
+    color: #DB5C69;
+    border: 2px solid #DB5C69;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+} 
+
+.care_thank_you {
+    width: 100%;
+    height: auto;
+    background: #fff0f2;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+.care_thank_you img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.thank_you_text {
+    background: #fff0f2;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 25px;
+}
+
+.thank_you_text p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.heart_icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #f2b8be;
+    border-radius: 50%;
+    color: #DB5C69;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* =========================
+   TABLET VERSION
+========================= */
+@media (max-width: 1024px) {
+
+    .care_banner {
+        height: auto;
+        min-height: 320px;
+        padding: 40px;
+        background-position: center;
+    }
+
+    .care_essentials {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        padding: 40px;
+        gap: 25px;
+    }
+
+    .care_tips {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 30px 40px 40px;
+        gap: 25px;
+    }
+
+    .care_material,
+    .care_extra_tips,
+    .care_thank_you {
+        height: auto;
+    }
+}
+
+
+/* =========================
+   MOBILE VERSION
+========================= */
+@media (max-width: 768px) {
+
+    .care_banner {
+        height: auto;
+        min-height: 300px;
+        padding: 30px 20px;
+        background-position: center;
+        text-align: left;
+    }
+
+    .care_banner .banner_content {
+        max-width: 70%;
+    }
+
+    .banner_title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .banner_text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .care_essentials {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .care_essentials h3 {
+        text-align: center;
+    }
+
+    .care_essential_text {
+        width: 100%;
+        padding: 25px 18px;
+    }
+
+    .care_tips {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 20px 15px 35px;
+        gap: 20px;
+    }
+
+    .care_material,
+    .care_extra_tips,
+    .care_thank_you {
+        height: auto;
+        width: 100%;
+    }
+
+    .care_thank_you img {
+        height: 200px;
+    }
+
+    .thank_you_text {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
