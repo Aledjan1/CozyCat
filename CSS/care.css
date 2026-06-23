@@ -1,3 +1,4 @@
+/* Care page banner */
 .care_banner {
     height: 380px;
     width: 100%;
@@ -8,23 +9,23 @@
     align-items: center;
     padding: 0 90px;
 }
-
+/* Banner text container */
 .care_banner .banner_content {
     max-width: 520px;
 }
-
+/* Banner heading */
 .banner_title {
     font-size: 42px;
     color: #2b1208;
     margin-bottom: 18px;
 }
-
+/* Banner paragraph */
 .banner_text {
     font-size: 19px;
     line-height: 1.6;
     color: #333;
 }
-
+/* Care essentials grid */
 .care_essentials {
     padding: 40px 90px 20px;
     background: #fffaf7;
@@ -34,14 +35,14 @@
     width: 100%;
     height: auto;
 }
-
+/* Care essentials title */
 .care_essentials h3 {
     grid-column: 1 / -1;
     font-size: 24px;
     color: #2b1208;
     margin-bottom: 5px;
 }
-
+/* Care essential card */
 .care_essential_text {
     background: white;
     border: 1px solid #eee;
@@ -50,7 +51,7 @@
     text-align: center;
     box-shadow: 0 4px 18px rgba(0,0,0,0.06);
 }
-
+/* Round care icon */
 .care_icon {
     width: 60px;
     height: 60px;
@@ -59,19 +60,19 @@
     color: #DB5C69;
     object-fit: cover;
 }
-
+/* Card heading */
 .care_essential_text h4 {
     font-size: 17px;
     margin-bottom: 12px;
     color: #2b1208;
 }
-
+/* Card text */
 .care_essential_text p {
     font-size: 14px;
     line-height: 1.6;
     color: #333;
 }
-
+/* Care tips main layout */
 .care_tips {
     padding: 20px 90px 50px;
     background: #fffaf7;
@@ -82,7 +83,7 @@
     height: auto;
     width: 100%;
 }
-
+/* Materials care box */
 .care_material {
     background: #fff0f2;
     padding: 20px;
@@ -90,14 +91,14 @@
     box-shadow: 0 4px 18px rgba(0,0,0,0.06);
     height: auto;
 }
-
+/* Small section headings */
 .care_material h3,
 .care_extra_tips h3 {
     font-size: 18px;
     color: #2b1208;
     margin-bottom: 20px;
 }
-
+/* Material care item */
 .care_material_item {
     display: flex;
     gap: 18px;
@@ -106,33 +107,33 @@
     border-bottom: 1px solid #eee;
 }
 
-
+/* Material item heading */
 .care_material_item h4 {
     font-size: 14px;
     margin-bottom: 5px;
     color: #2b1208;
 }
-
+/* Small text inside tips */
 .care_material_item p,
 .extra_tips p {
     font-size: 12px;
     line-height: 1.5;
 }
-
+/* Extra tips box */
 .care_extra_tips {
     background: #fff0f2;
     padding: 35px 30px;
     border-radius: 14px;
     height: auto;
 }
-
+/* Single extra tip row */
 .extra_tips {
     display: flex;
     gap: 15px;
     align-items: flex-start;
     margin-bottom: 22px;
 }
-
+/* Check icon */
 .tip_icon {
     color: #DB5C69;
     border: 2px solid #DB5C69;
@@ -145,7 +146,7 @@
     justify-content: center;
     flex-shrink: 0;
 } 
-
+/* Thank you card */
 .care_thank_you {
     width: 100%;
     height: auto;
@@ -154,14 +155,14 @@
     overflow: hidden;
     box-shadow: 0 4px 18px rgba(0,0,0,0.06);
 }
-
+/* Thank you image */
 .care_thank_you img {
     width: 100%;
     height: 210px;
     object-fit: cover;
     display: block;
 }
-
+/* Thank you text area */
 .thank_you_text {
     background: #fff0f2;
     padding: 18px 22px;
@@ -170,13 +171,13 @@
     margin: 0;
     gap: 25px;
 }
-
+/* Thank you paragraph */
 .thank_you_text p {
     margin: 0;
     font-size: 12px;
     line-height: 1.5;
 }
-
+/* Heart icon */
 .heart_icon {
     width: 50px;
     height: 50px;
@@ -190,9 +191,7 @@
     flex-shrink: 0;
 }
 
-/* =========================
-   TABLET VERSION
-========================= */
+/* TABLET VERSION */
 @media (max-width: 1024px) {
 
     .care_banner {
@@ -224,9 +223,7 @@
 }
 
 
-/* =========================
-   MOBILE VERSION
-========================= */
+/* MOBILE VERSION */
 @media (max-width: 768px) {
 
     .care_banner {

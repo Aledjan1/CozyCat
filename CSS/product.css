@@ -1,8 +1,9 @@
-/* PRODUCTS TOP */
+/* Products page top spacing */
 .products_items {
     padding: 40px 30px 0;
 }
 
+/* Top row with title and sort/filter controls */
 .products_top {
     display: flex;
     justify-content: space-between;
@@ -11,31 +12,37 @@
     height: 70px;
 }
 
+/* Product page heading area */
 .products_header {
     display: block;
     text-align: left;
 }
 
+/* Main page title */
 .banner_title {
     font-size: 32px;
     margin-bottom: 8px;
 }
 
+/* Highlighted word in the title */
 .banner_title span {
     color: #db5c69;
 }
 
+/* Text under the title */
 .banner_text {
     font-size: 17px;
     color: #2b1208;
 }
 
+/* Sort and filter controls wrapper */
 .products_sort {
     display: flex;
     gap: 22px;
     align-items: center;
 }
 
+/* Sort dropdown styling */
 .products_sort select {
     width: 260px;
     padding: 14px 5px;
@@ -46,11 +53,13 @@
 
 }
 
+/* Product image wrapper for the favorite button */
 .product_image_box {
     position: relative;
     width: 100%;
 }
 
+/* Favorite button position inside image box */
 .product_image_box .favorite_btn {
     position: absolute;
     top: 14px;
@@ -58,6 +67,7 @@
     z-index: 20;
 }
 
+/* Top filter button */
 .filter_top_btn {
     padding: 14px 28px;
     border: 1px solid #e6cfc5;
@@ -67,16 +77,14 @@
     cursor: pointer;
 }
 
-/* LAYOUT */
-
+/* Main layout with sidebar and products */
 .product_layout {
     display: grid;
     grid-template-columns: 250px 1fr;
     gap: 35px;
 }
 
-/* SIDEBAR */
-
+/* Sidebar filter box */
 .sidebar_filter {
     border-radius: 10px;
     padding: 25px;
@@ -84,15 +92,18 @@
     width: 250px;
 }
 
+/* Sidebar filter headings */
 .sidebar_filter h3 {
     font-size: 18px;
     margin: 0 0 18px;
 }
 
+/* Add space before next filter groups */
 .sidebar_filter h3:not(:first-child) {
     margin-top: 35px;
 }
 
+/* Filter option row */
 .sidebar_filter label {
     display: flex;
     align-items: center;
@@ -102,22 +113,26 @@
     cursor: pointer;
 }
 
+/* Radio button style */
 .sidebar_filter input[type="radio"] {
     width: 18px;
     height: 18px;
     accent-color: #db5c69;
 }
 
+/* Price range slider */
 .sidebar_filter input[type="range"] {
     width: 100%;
     accent-color: #db5c69;
 }
 
+/* Sidebar small text */
 .sidebar_filter p {
     margin-top: 12px;
     font-size: 15px;
 }
 
+/* Apply filter button */
 .filter_btn {
     margin-top: 18px;
     width: 100%;
@@ -131,7 +146,6 @@
 }
 
 /* PRODUCTS GRID */
-
 .products_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -139,6 +153,7 @@
     align-items: start;
 }
 
+/* Single product card */
 .product_cart {
     border: 1px solid #ead8d0;
     border-radius: 8px;
@@ -151,11 +166,13 @@
     align-items: start;
 }
 
+/* Product link wrapper */
 .product_link {
     text-decoration: none;
     display: block;
 }
 
+/* Remove link styling from title and price */
 .product_title,
 .product_price {
     text-decoration: none;
@@ -164,6 +181,7 @@
     color: inherit;
 }
 
+/* Favorite heart button */
 .favorite_btn {
     position: absolute;
     top: 14px;
@@ -180,10 +198,12 @@
     z-index: 20;
 }
 
+/* Active favorite state */
 .favorite_btn.active {
     color: #db5c69;
 }
 
+/* Product image */
 .image_product {
     width: 100%;
     height: 250px;
@@ -191,25 +211,30 @@
     display: block;
 }
 
+/* Product text area */
 .product_info {
     padding: 14px 16px 10px;
 }
 
+/* Product name */
 .product_info h3 {
     font-size: 16px;
     margin-bottom: 7px;
 }
 
+/* Product price */
 .product_info p {
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 14px;
 }
 
+/* Button width when product is already in cart */
 .add_cart_btn.in_cart {
      width: calc(100% - 32px);
 }
 
+/* Rating stars wrapper */
 .rating {
     display: flex;
     gap: 4px;
@@ -217,6 +242,7 @@
     padding: 0 16px;
 }
 
+/* Single star */
 .star {
     font-size: 24px;
     color: #ddd;
@@ -225,14 +251,17 @@
     user-select: none;
 }
 
+/* Active star color */
 .star.active {
     color: #f5a623;
 }
 
+/* Star hover effect */
 .star:hover {
     transform: scale(1.15);
 }
 
+/* Add to cart button */
 .add_cart_btn {
     margin: 0 16px 18px;
     background: linear-gradient(90deg, #db5c69, #ea6b78);
@@ -250,17 +279,18 @@
     justify-content: center;
 }
 
+/* Basket icon inside button */
 .basket {
     width: 25px;
     filter: brightness(0) invert(1);
 }
 
+/* Add button text */
 .add {
     font-size: 15px;
 }
 
-/* PAGINATION */
-
+/* Pagination wrapper */
 .pagination {
     display: flex;
     justify-content: center;
@@ -269,6 +299,7 @@
     margin: 18px 0 45px;
 }
 
+/* Pagination link */
 .pagination a {
     width: 38px;
     height: 38px;
@@ -283,12 +314,14 @@
     transition: 0.3s;
 }
 
+/* Current pagination page */
 .pagination a.active_page {
     background: #db5c69;
     color: white;
     border-color: #DB5C69;
 }
 
+/* Pagination hover effect */
 .pagination a:hover {
     background: #DB5C69;
     color: white;
@@ -297,15 +330,15 @@
 
 
 
-/* =========================
-   TABLET VERSION
-========================= */
+/* TABLET VERSION */
 @media (max-width: 1024px) {
 
+    /* Reduce page padding */
     .products_items {
         padding: 30px 20px 0;
     }
 
+    /* Stack title and controls */
     .products_top {
         flex-direction: column;
         align-items: flex-start;
@@ -313,41 +346,49 @@
         gap: 20px;
     }
 
+    /* Spread sort controls across width */
     .products_sort {
         width: 100%;
         justify-content: space-between;
     }
 
+    /* Smaller dropdown on tablet */
     .products_sort select {
         width: 220px;
     }
 
+     /* Smaller sidebar and content gap */
     .product_layout {
         grid-template-columns: 220px 1fr;
         gap: 20px;
     }
 
+    /* Tablet sidebar size */
     .sidebar_filter {
         width: 220px;
         min-height: auto;
     }
 
+    /* Two product columns on tablet */
     .products_container {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
+    /* Tablet product image size */
     .image_product {
         height: 220px;
         position: relative;
         overflow: hidden;
     }
 
+     /* Favorite button position on tablet */
     .favorite_btn {
         top: 15px;
         right: 15px;
     }
 
+    /* Smaller cart button on tablet */
     .add_cart_btn.in_cart {
         width: 140px;
         height: 40px;
@@ -357,15 +398,15 @@
 }
 
 
-/* =========================
-   MOBILE VERSION
-========================= */
+/* MOBILE VERSION */
 @media (max-width: 768px) {
 
+    /* Reduce page padding on mobile */
     .products_items {
         padding: 20px 15px 0;
     }
 
+    /* Stack top section on mobile */
     .products_top {
         flex-direction: column;
         align-items: stretch;
@@ -373,29 +414,35 @@
         gap: 15px;
     }
 
+    /* Smaller mobile title */
     .banner_title {
         font-size: 26px;
     }
 
+    /* Smaller mobile description */
     .banner_text {
         font-size: 15px;
     }
 
+     /* Stack sort controls */
     .products_sort {
         flex-direction: column;
         gap: 12px;
         width: 100%;
     }
 
+     /* Full width controls */
     .products_sort select,
     .filter_top_btn {
         width: 100%;
     }
 
+    /* Remove desktop grid layout */
     .product_layout {
         display: block;
     }
 
+    /* Hide filters until opened */
     .sidebar_filter {
         display: none;
         width: 100%;
@@ -405,10 +452,12 @@
         border-radius: 12px;
     }
 
+    /* Show mobile filter sidebar */
     .sidebar_filter.active {
         display: block;
     }
 
+    /* One product column on mobile */
     .products_container {
         display: grid;
         grid-template-columns: 1fr !important;
@@ -416,37 +465,45 @@
         width: 100%;
     }
 
+     /* Full width product card */
     .product_cart {
         width: 100%;
     }
 
+    /* Full width product link */
     .product_link {
         width: 100%;
     }
 
+    /* Mobile product image */
     .image_product {
         width: 100%;
         height: 260px;
         object-fit: cover;
     }
 
+     /* Larger product name on mobile */
     .product_info h3 {
         font-size: 18px;
     }
 
+    /* Larger product price on mobile */
     .product_info p {
         font-size: 18px;
     }
 
+     /* Full width cart button */
     .add_cart_btn {
         width: calc(100% - 32px);
     }
 
+     /* Allow pagination to wrap */
     .pagination {
         flex-wrap: wrap;
         gap: 8px;
     }
 
+     /* Smaller pagination buttons */
     .pagination a {
         width: 34px;
         height: 34px;

@@ -1,9 +1,11 @@
+/* Product link style */
 .product_link {
     text-decoration: none !important;
     color: inherit !important;
     display: block;
 }
 
+/* Main product details layout */
 .product_details {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,11 +14,13 @@
     background: #fffaf7;
 }
 
+/* Product image container */
 .product_details_image {
     position: relative;
     display: inline-block;
 }
 
+/* Favorite button on product image */
 .product_details_image .favorite_btn {
     position: absolute;
     bottom: 15px;
@@ -34,17 +38,20 @@
     z-index: 100;
 }
 
+/* Product image */
 .product_details_image img {
     width: 100%;
     display: block;
     border-radius: 16px;
 }
 
+/* Product title */
 .product_details_info h2{
     font-size: 38px;
     color: #2b1208;
 }
 
+/* Product price */
 .product_details_info .price {
     font-size: 28px;
     font-weight: bold;
@@ -52,12 +59,14 @@
     margin: 20px 0;
 }
 
+/* Remove underline from product text */
 .product_link h3,
 .product_link p {
     text-decoration: none !important;
     color: inherit !important;
 }
 
+/* Remove default link effects */
 .product_link,
 .product_link:focus,
 .product_link:active,
@@ -70,12 +79,14 @@
     box-shadow: none;
 }
 
+/* Remove focus effects from product links */
 .products_container a {
     outline: none !important;
     border: none !important;
     box-shadow: none !important;
 }
 
+/* Remove unwanted decorations from product card elements */
 .product_cart,
 .product_cart *,
 .product_link,
@@ -88,6 +99,7 @@
     box-shadow: none !important;
 }
 
+/* Product rating layout */
 .rating {
     display: flex;
     gap: 4px;
@@ -95,6 +107,7 @@
     padding: 0 16px;
 }
 
+/* Rating star style */
 .star {
     font-size: 24px;
     color: #ddd;
@@ -103,14 +116,17 @@
     user-select: none;
 }
 
+/* Active rating star */
 .star.active {
     color: #f5a623;
 }
 
+/* Star hover effect */
 .star:hover {
     transform: scale(1.15);
 }
 
+/* Add to cart button */
 .add_cart_btn {
     margin: 0 16px 18px;
     background: linear-gradient(90deg, #db5c69, #ea6b78);
@@ -128,11 +144,13 @@
     justify-content: center;
 }
 
+/* Basket icon inside button */
 .basket {
     width: 25px;
     filter: brightness(0) invert(1);
 }
 
+/* Reviews section */
 .reviews_section {
     grid-column: 1 / -1;
     background: white;
@@ -141,6 +159,7 @@
     margin-top: 30px;
 }
 
+/* Review form layout */
 .review_form {
     display: flex;
     flex-direction: column;
@@ -148,6 +167,7 @@
     margin-bottom: 25px;
 }
 
+/* Review form fields */
 .review_form select,
 .review_form textarea {
     padding: 12px;
@@ -155,11 +175,13 @@
     border-radius: 8px;
 }
 
+/* Review text area */
 .review_form textarea {
     min-height: 100px;
     resize: none;
 }
 
+/* Review submit button */
 .review_form button {
     width: 180px;
     padding: 12px;
@@ -170,21 +192,25 @@
     cursor: pointer;
 }
 
+/* Single review item */
 .review_item {
     border-top: 1px solid #eee;
     padding: 18px 0;
 }
 
+/* Stars inside reviews */
 .review_stars {
     color: #f5a623;
     font-size: 20px;
 }
 
+/* Rating popup container */
 .rating_wrapper {
     position: relative;
     display: inline-block;
 }
 
+/* Rating popup box */
 .rating_popup {
     display: none;
     position: absolute;
@@ -199,19 +225,23 @@
     z-index: 100;
 }
 
+/* Show rating popup on hover */
 .rating_wrapper:hover .rating_popup {
     display: block;
 }
 
+/* Dark mode reviews section */
 body.dark .reviews_section {
     background: #2b2b2b;
     color: white;
 }
 
+/* Dark mode review border */
 body.dark .review_item {
     border-top: 1px solid #444;
 }
 
+/* Dark mode form fields */
 body.dark .review_form select,
 body.dark .review_form textarea {
     background: #1f1f1f;
@@ -219,10 +249,12 @@ body.dark .review_form textarea {
     border: 1px solid #555;
 }
 
+/* Dark mode review button */
 body.dark .review_form button {
     background: #DB5C69;
 }
 
+/* Dark mode review text */
 body.dark .reviews_section h3,
 body.dark .review_item h4,
 body.dark .review_item p,
@@ -230,6 +262,7 @@ body.dark .review_item small {
     color: white;
 }
 
+/* Dark mode rating popup */
 body.dark .rating_popup {
     background: #2b2b2b;
     color: white;
@@ -239,20 +272,24 @@ body.dark .rating_popup {
 /* TABLET VERSIOn */
 @media (max-width: 1024px) {
 
+     /* Change product layout to one column */
     .product_details {
         grid-template-columns: 1fr;
         gap: 35px;
         padding: 40px;
     }
 
+    /* Smaller product title on tablet */
     .product_details_info h2 {
         font-size: 32px;
     }
 
+     /* Smaller price on tablet */
     .product_details_info .price {
         font-size: 24px;
     }
 
+    /* Reduce reviews top spacing */
     .reviews_section {
         margin-top: 10px;
     }
@@ -262,16 +299,19 @@ body.dark .rating_popup {
 /* MOBILE VERSION */
 @media (max-width: 768px) {
 
+     /* Product layout for mobile screens */
     .product_details {
         grid-template-columns: 1fr;
         padding: 25px 15px;
         gap: 25px;
     }
 
+     /* Smaller image corners on mobile */
     .product_details_image img {
         border-radius: 12px;
     }
 
+     /* Smaller favorite button on mobile */
     .product_details_image .favorite_btn {
         width: 40px;
         height: 40px;
@@ -280,36 +320,43 @@ body.dark .rating_popup {
         right: 10px;
     }
 
+    /* Center product title on mobile */
     .product_details_info h2 {
         font-size: 26px;
         text-align: center;
     }
 
+     /* Center product price on mobile */
     .product_details_info .price {
         font-size: 22px;
         text-align: center;
         margin: 15px 0;
     }
 
+     /* Full width cart button on mobile */
     .add_cart_btn {
         width: 100%;
         margin: 15px 0;
     }
 
+    /* Smaller reviews section padding */
     .reviews_section {
         padding: 20px;
     }
 
+     /* Full width review button */
     .review_form button {
         width: 100%;
     }
 
+     /* Center rating popup on mobile */
     .rating_popup {
         width: 200px;
         left: 50%;
         transform: translateX(-50%);
     }
 
+     /* Smaller review stars */
     .review_stars {
         font-size: 18px;
     }

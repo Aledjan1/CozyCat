@@ -1,20 +1,21 @@
+/* Apply border-box sizing to all elements */
 * {
     box-sizing: border-box;
 }
-
+/* Main page style */
 body {
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
    background: #f5f5f5;
    color: #222;
 }
-
+/* Main admin content wrapper */
 .admin_container {
     max-width: 1100px;
     margin: 40px auto;
     padding: 25px;
 }
-
+/* Admin page header card */
 .admin_header {
     background: white;
     color: #222;
@@ -23,23 +24,23 @@ body {
     margin-bottom: 25px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
+/* Admin title */
 .admin_header h1 {
     margin: 0;
     font-size: 34px;
 }
-
+/* Admin subtitle */
 .admin_header p {
     color: #666;
 }
-
+/* Dashboard cards grid */
 .admin_cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
     margin-bottom: 25px;
 }
-
+/* Single dashboard card */
 .admin_card {
     background: white;
     color: #222;
@@ -47,24 +48,24 @@ body {
     padding: 25px;
     text-align: center;
 }
-
+/* Card heading */
 .admin_card h2 {
     margin: 0;
     color: #DB5C69;
 }
-
+/* Card number */
 .admin_card p {
     font-size: 28px;
     font-weight: bold;
     color: black;
     margin: 15px 0 0;
 }
-
+/* Admin links layout */
 .admin_links {
     display: grid;
     gap: 15px;
 }
-
+/* Admin buttons and links */
 .admin_btn,
 .admin_links a {
     display: inline-block;
@@ -77,13 +78,13 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
+/* Button hover effect */
 .admin_btn:hover,
 .admin_links a:hover,
 button:hover {
     background: #c94b58;
 }
-
+/* Admin table layout */
 .admin_table {
     width: 100%;
     border-collapse: collapse;
@@ -92,46 +93,46 @@ button:hover {
     border-radius: 15px;
     overflow: hidden;
 }
-
+/* Table cells */
 .admin_table th,
 .admin_table td {
     padding: 14px;
     border-bottom: 1px solid #ddd;
     text-align: left;
 }
-
+/* Table header */
 .admin_table th {
     background: #DB5C69;
 }
-
+/* Product image inside table */
 .admin_table img {
     width: 70px;
     height: 70px;
     object-fit: cover;
     border-radius: 10px;
 }
-
+/* Edit and delete links */
 .admin_actions a {
     margin-right: 10px;
     color: #DB5C69;
     font-weight: bold;
     text-decoration: none;
 }
-
+/* Admin form card */
 .admin_form {
     background: white;
     color: #222;
     padding: 25px;
     border-radius: 18px;
 }
-
+/* Form labels */
 .admin_form label {
     display: block;
     margin-top: 15px;
     margin-bottom: 6px;
     font-weight: bold;
 }
-
+/* Form fields */
 .admin_form input,
 .admin_form textarea,
 .admin_form select {
@@ -142,11 +143,11 @@ button:hover {
     background: white;
     color: #222;
 }
-
+/* Bigger message field */
 .admin_form textarea {
     min-height: 120px;
 }
-
+/* Back link */
 .back_link {
     display: inline-block;
     margin-top: 20px;
@@ -155,7 +156,7 @@ button:hover {
     text-decoration: none;
     font-weight: bold;
 }
-
+/* Order status label */
 .status {
     padding: 6px 12px;
     border-radius: 20px;
@@ -163,23 +164,23 @@ button:hover {
     display: inline-block;
     color: white;
 }
-
+/* Pending status color */
 .status-pending {
     background: #f39c12;
 }
-
+/* Processing status color */
 .status-processing {
     background: #3498db;
 }
-
+/* Shipped status color */
 .status-shipped {
     background: #9b59b6;
 }
-
+/* Delivered status color */
 .status-delivered {
     background: #27ae60;
 }
-
+/* Small update button */
 .update_btn {
     width: 70px;
     height: 25px;
@@ -189,12 +190,12 @@ button:hover {
     color: white;
     border-radius: 10px;
 }
-
+/* Dark mode page background */
 body.dark {
     background: #111;
     color: white;
 }
-
+/* Dark mode admin blocks */
 body.dark .admin_header,
 body.dark .admin_card,
 body.dark .admin_table,
@@ -202,16 +203,16 @@ body.dark .admin_form {
     background: #2b2b2b;
     color: white;
 }
-
+/* Dark mode secondary text */
 body.dark .admin_header p,
 body.dark .admin_card p {
     color: #ddd;
 }
-
+/* Dark mode table borders */
 body.dark .admin_table td {
     border-bottom: 1px solid #444;
 }
-
+/* Dark mode form fields */
 body.dark .admin_form input,
 body.dark .admin_form textarea,
 body.dark .admin_form select {
@@ -219,7 +220,7 @@ body.dark .admin_form select {
     color: white;
     border: 1px solid #555;
 }
-
+/* Theme switch button */
 .theme_toggle {
     width: 76px;
     height: 38px;
@@ -230,7 +231,7 @@ body.dark .admin_form select {
     cursor: pointer;
     padding: 0;
 }
-
+/* Sun and moon icons */
 .toggle_icon {
     position: absolute;
     top: 50%;
@@ -238,15 +239,15 @@ body.dark .admin_form select {
     font-size: 16px;
     z-index: 1;
 }
-
+/* Sun icon position */
 .sun {
     left: 10px;
 }
-
+/* Moon icon position */
 .moon {
     right: 10px;
 }
-
+/* Moving circle inside theme switch */
 .toggle_circle {
     width: 30px;
     height: 30px;
@@ -258,15 +259,15 @@ body.dark .admin_form select {
     transition: 0.3s;
     z-index: 2;
 }
-
+/* Move circle in dark mode */
 body.dark .toggle_circle {
     left: 42px;
 }
-
+/* Dark mode switch background */
 body.dark .theme_toggle {
     background: #444;
 }
-
+/* Admin top navigation */
 .admin_nav {
     max-width: 1100px;
     margin: 20px auto 0;
@@ -277,9 +278,7 @@ body.dark .theme_toggle {
 }
 
 
-/* =========================
-   TABLET VERSION
-========================= */
+/* TABLET VERSION */
 @media (max-width: 1024px) {
 
     .admin_container {
@@ -304,9 +303,7 @@ body.dark .theme_toggle {
 }
 
 
-/* =========================
-   MOBILE VERSION
-========================= */
+/* MOBILE VERSION */
 @media (max-width: 768px) {
 
     .admin_container {

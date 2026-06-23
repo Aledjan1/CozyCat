@@ -1,19 +1,24 @@
 <?php
+// Start session for user data, cart and login status
     session_start();
 
+    // Set page information for header and CSS/JS files
     $pageTitle = "Home";
     $pageCss = "CSS/home.css";
     $activePage = "home";
     $pageJs = "JS/home.js";
 
+    // Connect to the database
     include "includes/db.php";
 
+    // Get the latest 4 products for the home page
     $sql = "SELECT * FROM cat_products ORDER BY productID DESC LIMIT 4";
     $result = $conn->query($sql);
 
+    // Include the site header
     include "includes/header.php";
 ?>
-
+<!-- Banner slider -->
 <section class="banner">
     <button class="slider_btn prev" onclick="prevSlide()">&lt;</button>
         <div class="banner_content">
@@ -23,6 +28,7 @@
         </div>
     <button class="slider_btn next" onclick="nextSlide()">&gt;</button>
 </section>
+<!-- Store benefits -->
 <section class="features">
     <div class="features_container">
         <div class="feature_item">
@@ -55,15 +61,20 @@
         </div>
     </div>
 </section>
+<!-- Popular products from database -->
 <section class="products">
     <div class="products_header">
         <h2>Popular Cat Houses</h2>
         <a href="products.php">View all products</a>
     </div>
      <div class="products_container">
+         <!-- Check if products exist -->
         <?php if($result && $result->num_rows > 0): ?>
+            <!-- Loop through each product -->
             <?php while ($product = $result->fetch_assoc()): ?>
+                <!-- Product card -->
                 <div class="product_cart">
+                    <!-- Product image, name and price -->
                     <a href="product_details.php?id=<?php echo (int)$product['productID']; ?>" class="product_link">
                         <img
                             src="<?php echo htmlspecialchars($product['image']); ?>"
@@ -75,10 +86,12 @@
                             <p>£<?php echo number_format($product['price'], 2); ?></p>
                         </div>
                     </a>
+                    <!-- Product rating stars -->
                     <div class="rating"> 
                         <?php 
-                            $rating = $product['rating'] ?? 0;
-                            
+                            // Get product rating or use 0 if empty
+                            $rating = $product['rating'] ?? 0; 
+                            // Show 5 stars and fill stars based on rating
                             for ($i = 1; $i <= 5; $i++) {
                                 if($i <= $rating) {
                                     echo '<span class="star filled">⭐</span>';
@@ -88,16 +101,19 @@
                             }
                         ?>
                     </div>
+                    <!-- Add product to cart button -->
                     <button class="add_cart_btn" data-product-id="<?php echo (int)$product['productID']; ?>">
                         <img src="images/basket.png" alt="basket" class="basket">
                     </button>
                 </div>  
             <?php endwhile; ?>
+        <!-- Show message if no products were found -->
         <?php else: ?>
             <p>No products found.</p>
         <?php endif; ?>
     </div>
 </section>
+<!-- Video section -->
 <section class="video_section">
     <div class="video_frame">
         <iframe  
@@ -113,6 +129,6 @@
             class="watch_btn">Watch Video<img src="images/play.png" alt="Button play" id="button_play"></a>
     </div>
 </section>
-
+// Include the site footer
 <?php include "includes/footer.php"; ?>
         

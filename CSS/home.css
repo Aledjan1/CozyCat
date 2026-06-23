@@ -1,4 +1,4 @@
-/*Banner*/
+/*Banner section*/
 .banner {
    width: 100%;
    height: 420px;
@@ -13,18 +13,20 @@
 
 }
 
+/* Text content inside the banner */
 .banner_content {
     max-width: 450px;
     margin-bottom: 50px;
 }
 
-
+/* Banner paragraph text */
 .banner_content p {
     font-size: 18px;
     margin-bottom: 25px;
     color: #222;
 }
 
+/* Main banner button */
 .banner_buy_btn {
     display: inline-block;
     text-decoration: none;
@@ -38,11 +40,12 @@
     text-align: center;
 }
 
-
+/* Highlighted word in banner title */
 .banner_content h2 span {
     color: var(--bottom-color);
 }
 
+/* Slider arrow buttons */
 .slider_btn {
    position: absolute;
    top: 50%;
@@ -61,14 +64,16 @@
    color: pink;
 }
 
+/* Left slider button */
 .prev {
-    left: 25px;
-    
+    left: 25px; 
 }
 
+/* Right slider button */
 .next {
     right: 25px;
 }
+
 /*Features section*/
 .features {
     background: #fff;
@@ -77,6 +82,7 @@
     padding: 5px 0; 
 }
 
+/* Features layout container */
 .features_container {
     display: flex;
     justify-content: space-between;
@@ -88,6 +94,7 @@
     padding: 20px 80px;
 }
 
+/* Single feature item */
 .feature_item {
     display: flex;
     gap: 15px;
@@ -95,6 +102,7 @@
     flex: 1;
 }
 
+/* Round feature icon */
 .feature_icon {
     font-size: 18px;
     background: #fff;
@@ -109,23 +117,27 @@
     flex-shrink: 0;
 }
 
+/* Feature title */
 .feature_item h3 {
     font-size: 14px;
     margin: 0;
     font-weight: 600;
 }
 
+/* Feature description */
 .feature_item p {
     font-size: 12px;
     color: #777;
     margin: 2px 0 0;
 }
-/*Products*/
+
+/* Products section */
 .products {
     padding: 40px 80px;
     background-color: #fff;
 }
 
+/* Products title and link row */
 .products_header {
     display: flex;
     justify-content: space-between;
@@ -133,23 +145,27 @@
     margin-bottom: 25px;
 }
 
+/* Products section title */
 .products_header h2 {
     font-size: 26px;
     color: #2b1208;
 }
 
+/* View all products link */
 .products_header a {
     color: var(--bottom-color);
     text-decoration: none;
     font-weight: 600;
 }
 
+/* Product cards grid */
 .products_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
 
+/* Single product card */
 .product_cart {
     border: 1px solid #ead8d0;
     background: white;
@@ -163,26 +179,31 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Link around product card */
 .product_link {
     text-decoration: none;
     display: block;
 }
 
+/* Product card hover effect */
 .product_cart:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
 }
 
+/* Product image */
 .image_product {
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
+/* Product name and price area */
 .product_info {
     padding: 14px 16px 10px;
 }
 
+/* Product name */
 .product_info h3 {
     grid-column: 1 / 2;
     font-size: 18px;
@@ -192,6 +213,7 @@
     text-overflow: ellipsis;
 }
 
+/* Product price */
 .product_info p {
     grid-column: 1 / 2;
     margin: 0;
@@ -199,6 +221,7 @@
     font-weight: bold;
 }
 
+/* Product rating stars container */
 .rating {
     display: flex;
     gap: 4px;
@@ -206,6 +229,7 @@
     padding: 0 16px;
 }
 
+/* Single rating star */
 .star {
     font-size: 24px;
     color: #ddd;
@@ -214,14 +238,17 @@
     user-select: none;
 }
 
+/* Active rating star */
 .star.active {
     color: #f5a623;
 }
 
+/* Star hover effect */
 .star:hover {
     transform: scale(1.15);
 }
 
+/* Add to cart button */
 .add_cart_btn {
     margin: 0 16px 18px;
     background: linear-gradient(90deg, #db5c69, #ea6b78);
@@ -239,16 +266,17 @@
     justify-content: center;
 }
 
+/* Basket icon inside button */
 .basket {
     width: 24px;
     height: 24px;
 }
 
+/* Small add text/icon */
 .add {
     font-size: 5px;
     color: white;
 }
-
 
 /*Video sectoin*/
 .video_section {
@@ -267,6 +295,7 @@
     margin-bottom: 15px;
 }
 
+/* Light overlay on video background */
 .video_section::before {
     content: "";
     position: absolute;
@@ -274,24 +303,28 @@
     background: rgba(255, 255, 255, 0.55);
 }
 
+/* Video iframe wrapper */
 .video_frame {
     width: 50%;
     position: relative;
     z-index: 2;
 }
 
+/* Embedded video */
 .video_frame iframe {
     width: 100%;
     height: 380px;
     border-radius: 12px;
 }
 
+/* Text content near video */
 .video_content {
     width: 40%;
     position: relative;
     z-index: 2;
 }
 
+/* Video section title */
 .video_content h2 {
     font-size: 32px;
     line-height: 1.2;
@@ -299,12 +332,14 @@
     color: #2b1208;
 }
 
+/* Video section paragraph */
 .video_content p {
     font-size: 16px;
     color: #555;
     margin-bottom: 25px;
 }
 
+/* Watch video button */
 .watch_btn {
     display: flex;
     align-items: center;
@@ -323,12 +358,14 @@
     width: 200px;
 }
 
+/* Play icon inside watch button */
 #button_play {
     width: 22px;
     height: 22px;
     object-fit: contain;
 }
 
+/* Paw icon near video title */
 #paw {
     width: 30px;
     height: 30px;
@@ -336,6 +373,7 @@
     margin-top: 5px;
 }
 
+/* Watch button hover effect */
 .watch_btn:hover {
     background: #c74458;
 }
@@ -343,29 +381,35 @@
 /* TABLET VERSION */
 @media (max-width: 1024px) {
 
+     /* Smaller banner for tablets */
     .banner {
         height: 380px;
         padding-left: 80px;
     }
 
+     /* Reduce feature spacing on tablets */
     .features_container {
         padding: 20px 30px;
         gap: 20px;
     }
 
+     /* Reduce products section padding */
     .products {
         padding: 35px 40px;
     }
 
+     /* Show two products per row */
     .products_container {
         grid-template-columns: repeat(2, 1fr);
     }
 
+     /* Adjust video section spacing */
     .video_section {
         padding: 40px;
         gap: 35px;
     }
 
+    /* Reduce video height */
     .video_frame iframe {
         height: 300px;
     }
@@ -376,6 +420,7 @@
 /* MOBILE VERSION */
 @media (max-width: 768px) {
 
+    /* Make banner smaller and centered */
     .banner {
         height: 360px;
         padding: 30px;
@@ -384,63 +429,76 @@
         background-position: center;
     }
 
+      /* Use full width for banner content */
     .banner_content {
         max-width: 100%;
         margin-bottom: 0;
     }
 
+    /* Smaller banner paragraph on mobile */
     .banner_content p {
         font-size: 16px;
     }
 
+     /* Smaller banner button on mobile */
     .banner_buy_btn {
         padding: 12px 28px;
         font-size: 15px;
     }
 
+     /* Smaller slider buttons on mobile */
     .slider_btn {
         width: 30px;
         height: 30px;
         font-size: 28px;
     }
 
+    /* Move left slider button closer to edge */
     .prev {
         left: 10px;
     }
 
+     /* Move right slider button closer to edge */
     .next {
         right: 10px;
     }
 
+    /* Stack feature items vertically */
     .features_container {
         flex-direction: column;
         padding: 25px 20px;
         gap: 20px;
     }
 
+     /* Align feature items to the left */
     .feature_item {
         width: 100%;
         justify-content: flex-start;
         text-align: left;
     }
 
+    /* Reduce product section padding */
     .products {
         padding: 30px 20px;
     }
 
+     /* Stack products header content */
     .products_header {
         flex-direction: column;
         gap: 10px;
     }
 
+     /* Show one product per row */
     .products_container {
         grid-template-columns: 1fr;
     }
 
+     /* Increase product image height on mobile */
     .image_product {
         height: 220px;
     }
 
+     /* Stack video and text vertically */
     .video_section {
         flex-direction: column;
         height: auto;
@@ -449,23 +507,28 @@
         text-align: center;
     }
 
+     /* Use full width for video and text */
     .video_frame,
     .video_content {
         width: 100%;
     }
 
+    /* Reduce video height on mobile */
     .video_frame iframe {
         height: 220px;
     }
 
+       /* Smaller video title on mobile */
     .video_content h2 {
         font-size: 26px;
     }
 
+     /* Center watch button on mobile */
     .watch_btn {
         margin: 0 auto;
     }
 
+     /* Make banner text readable on image */
     .banner_content h2,
     .banner_content p {
         color: white;

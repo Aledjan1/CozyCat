@@ -1,14 +1,17 @@
 <?php
+    // Start session for user data and site features
     session_start();
 
+    // Set page information for the header
     $pageTitle = "Care";
     $activePage = "care";
     $pageCss = "CSS/care.css";
     $pageJs = "";
 
+    // Include the site header
     include "includes/header.php";
 ?>
-
+<!-- Main care banner -->
 <section class="care_banner">
     <div class="banner_content">
             <h2 class="banner_title">Cat House Care Guide<img src="images/paw.png" class="paws" alt="cats paws"></h2>
@@ -16,6 +19,7 @@
                 safe and comfortable for years to come.</p>
         </div>
 </section>
+<!-- Main care rules -->
 <section class="care_essentials">
     <h3>Care Essentials<img src="images/paw.png" class="paws" alt="cats paws"></h3>
     <div class="care_essential_text">
@@ -39,7 +43,9 @@
         <p>Keep the house in a quiet<br>warm spot where your cat<br>feels safe and relaxed.</p>
     </div>
 </section>
+<!-- Extra care information -->
 <section class="care_tips">
+    <!-- Cleaning tips for different materials -->
     <div class="care_material">
         <h3>Cleaning Different Materials<img src="images/paw.png" class="paws" alt="cats paws"></h3>
 
@@ -73,6 +79,7 @@
             </div>
         </div>
     </div>
+     <!-- Additional care tips -->
     <div class="care_extra_tips">
         <h3>Extra Tips<img src="images/paw.png" class="paws" alt="cats paws"></h3>
 
@@ -96,6 +103,7 @@
             <p>Every cat is different - observe what your cat loves!</p>
         </div>
     </div>
+    <!-- Thank you message -->
     <div class="care_thank_you">
         <img src="images/care_cat_house.png" alt="Cat in a cat house">
 
@@ -109,5 +117,6 @@
     </div>
 </section>
 <?php 
+// Include the site footer
     include "includes/footer.php";
 ?>

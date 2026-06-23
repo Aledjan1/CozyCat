@@ -1,9 +1,10 @@
+/* Account page background and spacing */
 .account_page {
     padding: 60px 90px;
     background: #fffaf7;
     min-height: 70vh;
 }
-
+/* Main account card */
 .account_card {
     max-width: 500px;
     background: white;
@@ -11,17 +12,17 @@
     border-radius: 16px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
-
+/* Account title */
 .account_card h2 {
     margin-bottom: 25px;
     color: #2b1208;
 }
-
+/* Account text */
 .account_card p {
     font-size: 17px;
     margin-bottom: 12px;
 }
-
+/* Account buttons container */
 .account_links {
     margin-top: 25px;
     display: flex;
@@ -29,7 +30,7 @@
     gap: 12px;
     flex-wrap: wrap;
 }
-
+/* Sticky order page links */
 .orders_top_links {
     display: flex;
     justify-content: center;
@@ -41,7 +42,7 @@
     z-index: 500;
     padding: 10px 0;
 }
-
+/* Order top link buttons */
 .orders_top_links a {
     width: auto;
     padding: 8px 14px;
@@ -49,7 +50,7 @@
     border-radius: 20px;
     white-space: nowrap;
 }
-
+/* Account link buttons */
 .account_links a {
     background: var(--bottom-color);
     color: white;
@@ -60,41 +61,39 @@
     font-weight: bold;
     width: auto;
 }
-
+/* Order card */
 .order_box {
     padding: 18px;
     margin-bottom: 18px;
     border-radius: 12px;
     background: #fff;
 }
-
+/* Single order item row */
 .order_item {
     display: flex;
     gap: 14px;
     align-items: center;
     margin: 15px 0;
 }
-
+/* Order product image */
 .order_item img {
     width: 75px;
     height: 75px;
     object-fit: cover;
     border-radius: 10px;
 }
-
+/* Order product name */
 .order_item h4 {
     margin: 0 0 6px;
 }
-
+/* Order product price */
 .order_item p {
     margin: 0;
     color: #DB5C69;
     font-weight: bold;
 }
 
-/* =========================
-   TABLET VERSION
-========================= */
+/* TABLET VERSION */
 @media (max-width: 1024px) {
 
     .account_page {
@@ -107,9 +106,7 @@
 }
 
 
-/* =========================
-   MOBILE VERSION
-========================= */
+/* MOBILE VERSION */
 @media (max-width: 768px) {
 
     .account_page {

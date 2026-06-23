@@ -1,17 +1,24 @@
 <?php
+// Start session to check the logged-in user
 session_start();
+
+// Connect to the database
 include "includes/db.php";
 
+// Show modal close button and title
 echo '<span onclick="closeFavorites()" class="close">×</span>';
 echo '<h2>Your Favorites</h2>';
 
+// Stop if the user is not logged in
 if (!isset($_SESSION['user_id'])) {
     echo '<p>Please login to view favorites.</p>';
     exit;
 }
 
+// Get the current user ID
 $userID = (int) $_SESSION['user_id'];
 
+// Get user's favorite products from the database
 $sql = "SELECT 
             cat_products.productID, 
             cat_products.name,  
@@ -24,17 +31,19 @@ $sql = "SELECT
 
 $result = $conn->query($sql);
 
+// Stop if the SQL query has an error
 if (!$result) {
     echo "SQL Error: " . $conn->error;
     exit;
 }
 
+// Show message if there are no favorite products
 if (!$result || $result->num_rows === 0) {
     echo '<p>No favorites yet</p>';
     exit;
 }
 
-
+// Display each favorite product
 while ($product = $result->fetch_assoc()) {
     echo '
         <div class="favorite_item">
