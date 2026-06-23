@@ -86,20 +86,21 @@ In development
 ![About](screenshots/About.png)
 
 ### 📦 Care 
+
 ![Care](screenshots/Care.png)
 
 ### ⚙️ Admin Dashboard
 
-![Admin](screenshots/Admin Dashboard.png)
+![Admin](screenshots/Admin_Dashboard.png)
 
 ### Ⓜ️ Manage product
 
-![Manage product](screenshots/Manage Product.png)
+![Manage product](screenshots/Manage_Product.png)
 
 ### ©️ Manage Orders
 
-![Manage orders](screenshots/Manage Orders.png)
+![Manage orders](screenshots/Manage_Orders.png)
 
 ### ➕ Add prodact
 
-![Add product](screenshots/Add product.png)
+![Add product](screenshots/Add_product.png)
