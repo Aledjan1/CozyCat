@@ -75,24 +75,31 @@ In development
 
 ### 🏠 Home Page
 
-![Home](screenshots/home.png)
+![Home](screenshots/Home.png)
 
 ### 🛍 Products Page
 
-![Products](screenshots/products.png)
+![Products](screenshots/Products.png)
 
-### 📄 Product Details
+### 📄 About
 
-![Product Details](screenshots/product_details.png)
+![About](screenshots/About.png)
 
-### 👤 Account Page
+### 📦 Care 
+![Care](screenshots/Care.png)
 
-![Account](screenshots/account.png)
+### ⚙️ Admin Dashboard
 
-### ⚙️ Admin Panel
+![Admin](screenshots/Admin Dashboard.png)
 
-![Admin](screenshots/admin.png)
+### Ⓜ️ Manage product
 
-### 📱 Mobile Version
+![Manage product](screenshots/Manage Product.png)
 
-![Mobile](screenshots/mobile.png)
+### ©️ Manage Orders
+
+![Manage orders](screenshots/Manage Orders.png)
+
+### ➕ Add prodact
+
+![Add product](screenshots/Add product.png)
