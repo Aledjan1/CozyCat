@@ -70,3 +70,36 @@ Bedford, United Kingdom
 ## 🚀 Project Status
 
 In development
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home](screenshots/Home.png)
+
+### 🛍 Products Page
+
+![Products](screenshots/Products.png)
+
+### 📄 About
+
+![About](screenshots/About.png)
+
+### 📦 Care 
+![Care](screenshots/Care.png)
+
+### ⚙️ Admin Dashboard
+
+![Admin](screenshots/Admin Dashboard.png)
+
+### Ⓜ️ Manage product
+
+![Manage product](screenshots/Manage Product.png)
+
+### ©️ Manage Orders
+
+![Manage orders](screenshots/Manage Orders.png)
+
+### ➕ Add prodact
+
+![Add product](screenshots/Add product.png)
