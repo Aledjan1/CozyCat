@@ -104,3 +104,11 @@ In development
 ### ➕ Add prodact
 
 ![Add product](screenshots/Add_product.png)
+
+### 👤 My account
+
+![My account](screenshots/My_account.png)
+
+### 📬 My orders
+
+![My orders](screenshots/My_orders.png)
